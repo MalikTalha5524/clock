@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#clockcontainer {
+  margin: auto;
+  height: 40vw;
+  width: 40vw;
+  background-image: url(../images/clock.png);
+  background-color: #f1f0f0;
+  border-radius: 40px;
+  background-size: 100%;
+  position: relative;
+}
+
+.icon {
+  font-size: 42.1px;
+  position: absolute;
+  top: 45.2%;
+  left: 46.2%;
+  z-index: 1;
+  color: #211e1e;
+}
+
+#hour,
+#mint,
+#second {
+  position: absolute;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#hour {
+  width: 1.9%;
+  height: 30%;
+  left: 48.85%;
+  top: 20%;
+  opacity: 0.8;
+  transform-origin: bottom;
+  background-color: black;
+}
+
+#mint {
+  width: 1.8%;
+  height: 35%;
+  left: 49%;
+  top: 16%;
+  opacity: 0.8;
+  transform-origin: bottom;
+  background-color: #585151;
+}
+
+#second {
+  width: 1.2%;
+  height: 40%;
+  left: 49%;
+  top: 10%;
+  opacity: 0.8;
+  transform-origin: bottom;
+  background-color: rgb(227, 159, 159);
+}
+
+h1 {
+  font-size: 56px;
+  position: absolute;
+  top: 27%;
+  left: 39%;
+  color: rgb(200, 27, 27);
+  font-style: italic;
+}
+
+p {
+  font-size: 32px;
+  width: 243px;
+  position: absolute;
+  top: 54%;
+  left: 29%;
+  color: rgba(191, 21, 2, 0.9);
+  text-align: center;
+  text-transform: capitalize;
+}
+/* responsive------------------------------------------ 320px---------------------------- */
+@media screen and (min-width: 320px) and (max-width: 474px) {
+  h1 {
+    left: 35%;
+    font-size: 20px;
+  }
+  p {
+    top: 62%;
+    left: 18%;
+    font-size: 10px;
+    width: 80px;
+  }
+  .icon {
+    top: 45.2%;
+    left: 46.2%;
+    font-size: 12.1px;
+  }
+}
+/* Small screens, such as mobile devices */
+@media only screen and (min-width: 475px) and (max-width: 767px) {
+  /* CSS styles for small screens */
+  h1 {
+    left: 31%;
+    font-size: 40px;
+  }
+  p {
+    top: 62%;
+    left: 25%;
+    font-size: 16px;
+    width: 100px;
+  }
+  .icon {
+    top: 45.2%;
+    left: 46.2%;
+    font-size: 18.1px;
+  }
+}
+/* Medium screens, such as tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles for medium screens */
+  h1 {
+    left: 35%;
+    font-size: 50px;
+  }
+  p {
+    top: 62%;
+    left: 14%;
+    font-size: 21px;
+  }
+  .icon {
+    top: 45.2%;
+    left: 46.2%;
+    font-size: 28.1px;
+  }
+}
+/* Large screens, such as laptops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* CSS styles for large screens */
+  h1 {
+    left: 35%;
+  }
+  p {
+    top: 57%;
+    left: 22%;
+  }
+  .icon {
+    top: 45.2%;
+    left: 46.2%;
+    font-size: 42.1px;
+  }
+}
+/* Extra large screens, such as desktops */
+@media only screen and (min-width: 1200px) {
+  /* CSS styles for extra large screens */
+}
